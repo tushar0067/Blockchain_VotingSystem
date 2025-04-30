@@ -1,15 +1,15 @@
-.voterList{
-  width:70%;
-  margin:0 auto;
-  margin-block: 2rem;
-
+.voterList {
+  width: 85%;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-@media screen and (max-width:35em){
-
-.voterList{
-  width:85%;
-  
-}
-
+@media screen and (max-width: 768px) {
+  .voterList {
+    width: 90%;
+    padding: 1rem;
+  }
 }

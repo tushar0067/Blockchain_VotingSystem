@@ -31,6 +31,6 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.2",
     "ethers": "^6.13.4",
-    "hardhat": "^2.22.17"
+    "hardhat": "^2.23.0"
   }
 }

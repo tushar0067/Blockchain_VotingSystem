@@ -1,66 +1,79 @@
-.home{
-  width:70%;
-  margin: 0 auto;
-  margin-block: 2rem;
-}
-.winner{
-  margin-block: 3rem;
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
-  gap:2rem;
+.home {
+  width: 85%;
+  margin: 2rem auto;
 }
 
-.winner_info{
-  background-color: #231e39;
-  display:grid;
-  padding:1rem;
-  border-radius: .2rem;
-  grid-template-columns: repeat(2,1fr);
-  gap:1rem;
+.winner {
+  margin-block: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.winner_info {
+  background-color: rgb(217, 244, 253);
+  display: grid;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   align-items: center;
 }
-.winner_message{
-  background-color: #231e39;
+
+.winner_message {
+  background-color: rgb(217, 244, 253);
   padding: 2rem;
-  border-radius: .2rem;
+  border-radius: 12px;
   font-size: 1.5rem;
-  color:#b3b8cd;
-  line-height: 0;
+  color: rgb(0, 174, 239);
+  position: relative;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.winner_message small {
+  font-size: 3rem;
   position: relative;
 }
-.winner_message small{
-  font-size:5rem;
-  top:43%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  position: absolute;
+
+.candidateList {
+  background-color: rgb(217, 244, 253);
+  border:2px solid  rgb(0, 174, 239);
+  color: rgb(0, 174, 239);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
 }
 
-.candidateList{
-  background-color: #9a02ac;
-font-size: 1rem;
-padding: .1rem 1rem;
-
-}
-
-.candidate_list p{
+.candidate_list p {
   font-weight: 600;
 }
 
-.candidate_list span{
-background-color: #231e39;
-padding: .5rem;
-margin-left: .5rem;
-color:#b3b8cd;
-border-radius: .2rem;
+.candidate_list span {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  color: #333;
+  border-radius: 6px;
 }
 
-@media screen and (max-width:35em){
-  .home{width:90%;}
-  .winner{
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .home {
+    width: 90%;
+  }
+
+  .winner {
     grid-template-columns: 1fr;
   }
-  .winner_message small{
-    font-size: .2rem;
+
+  .winner_info {
+    grid-template-columns: 1fr;
+  }
+
+  .winner_message small {
+    font-size: 2rem;
   }
 }

@@ -1,7 +1,7 @@
 .navBar{
   width:1005;
   height:5.5rem;
-  background-color: #231E39;
+  background-color: rgb(217, 244, 253);
   box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
   margin-bottom: 2rem;
 
@@ -16,13 +16,14 @@ cursor: pointer;
   display:flex;
   align-items: center;
   justify-content: space-between;
-  color:#fff;
+  color: rgb(0, 174, 239);
 
 }
 .connect{
-  background-color: #9a02ac;
+  background-color: rgb(217, 244, 253);
   padding: .5rem 2rem ;
   border-radius: .2rem;
+  
   cursor:pointer;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
   position: relative;
@@ -30,7 +31,7 @@ cursor: pointer;
 
 .navigation{
   position: absolute;
-  background-color: #9a02ac;
+  background-color: rgb(217, 244, 253);
   padding: 1rem;
   left: 0;
   top: 3rem;
@@ -41,7 +42,7 @@ z-index: 1111111;
   background-color: transparent;
   border: 0;
   font-size: 1rem;
-  color:#fff;
+  color: rgb(0, 174, 239);
   font-weight: 600;
   cursor: pointer;
 }

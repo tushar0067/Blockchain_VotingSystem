@@ -1,6 +1,6 @@
 .input__box{
   width:100%;
-  background-color: #730283;
+  background-color: white;
   padding:.5rem;
   border-radius: .2rem;;
 }
@@ -11,7 +11,7 @@
   width:100%;
   outline:none;
   padding-inline:.5rem;
-  color:#fff;
+  color:black;
 
 }
 .input__box input::placeholder{

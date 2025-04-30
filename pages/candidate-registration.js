@@ -10,7 +10,7 @@ import Input  from '../components/Input/Input';
 import imagefour from '../assets/Photo/imagefour.JPG';
 import image2 from '../assets/Photo/image2.jpeg';
 import image from '../assets/Photo/gallery.webp';
-import voter_image from '../assets/Photo/give_vote.png';
+import voter_image from '../assets/Photo/block.png';
 const allowedVoters = () => {
   const [fileUrl,setFileUrl] = useState(null);
   const [candidateForm, setCandidateForm] = useState({
@@ -52,10 +52,10 @@ return (
     <img src={fileUrl} alt="Voter Image"/>
     <div className={Style.voterInfo_paragraph}>
       <p>
-        Name: <span>&nbps; {candidateForm.name}</span></p>
-        <p>Add: &nbps; <span>{candidateForm.address.slice(0,20)}</span></p>
+        Name: <span>&nbsp; {candidateForm.name}</span></p>
+        <p>Add: &nbsp; <span>{candidateForm.address.slice(0,20)}</span></p>
         <p>
-        Pos: <span>&nbps; {candidateForm.position}</span></p>
+        Pos: <span>&nbsp; {candidateForm.position}</span></p>
         </div>
         </div>
   )}
@@ -113,11 +113,11 @@ return (
       </div>
     </div>
 <div className={Style.input__container}>
-  <Input inputType="text" title="Name" placeholder="Voter name" handleClick={(e) => setCandidateForm({...candidateForm, name: e.target.value })}/>
+  <Input inputType="text" title="Name" placeholder="Candidate name" handleClick={(e) => setCandidateForm({...candidateForm, name: e.target.value })}/>
   
-  <Input inputType="text" title="Address" placeholder="Voter Address" handleClick={(e) => setCandidateForm({...candidateForm, address: e.target.value })}/>
+  <Input inputType="text" title="Address" placeholder="Candidate Address" handleClick={(e) => setCandidateForm({...candidateForm, address: e.target.value })}/>
   
-  <Input inputType="text" title="age" placeholder="Voter Age" handleClick={(e) => setCandidateForm({...candidateForm, age: e.target.value })}/>
+  <Input inputType="text" title="age" placeholder="Canddidate Age" handleClick={(e) => setCandidateForm({...candidateForm, age: e.target.value })}/>
 
 <div className={Style.Button}>
   <Button btnName="Authorized Candidate" handleClick={() => setCandidate(candidateForm,fileUrl,router)} />
